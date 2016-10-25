@@ -11,7 +11,7 @@ import { View } from 'react-native'
 let store = createStore(todoApp)
 
 const App = () => (
-	<View store={store}/>
+    <View store={store}/>
 )
 
 export default App
@@ -22,7 +22,7 @@ console.log(store.getState())
 // Every time the state changes, log it
 // Note that subscribe() returns a function for unregistering the listener
 let unsubscribe = store.subscribe(() =>
-  console.log(store.getState())
+    console.log(store.getState())
 )
 
 // Dispatch some actions
